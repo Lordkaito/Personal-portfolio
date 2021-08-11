@@ -59,3 +59,12 @@ body {
 .suporting-text {
   color: #7f8cff;
 }
+
+.social-media-container {
+  display: flex;
+  list-style: none;
+  color: #344563;
+  margin: 12px 0;
+  width: 170px;
+  justify-content: space-between;
+}
