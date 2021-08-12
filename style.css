@@ -8,8 +8,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-  display: flex;
+.header {
   align-items: center;
   justify-content: space-between;
   padding: 1.375em 0.5em 1.375em 0.5em;
@@ -40,7 +39,6 @@ body {
 }
 
 .main-container {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 114px 0;
@@ -61,10 +59,13 @@ body {
 }
 
 .social-media-container {
-  display: flex;
   list-style: none;
   color: #344563;
   margin: 12px 0;
   width: 170px;
   justify-content: space-between;
+}
+
+.d-flex {
+  display: flex;
 }
