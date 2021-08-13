@@ -186,8 +186,8 @@ image {
   color: var(--font-main-color);
 }
 
-.action-btn a,
-.action-btn-2 a {
+.action-btn,
+.action-btn-2{
   text-decoration: none;
   color: var(--font-main-color);
   font-weight: 600;
@@ -275,11 +275,15 @@ image {
 }
 
 .contact-text {
-  width: 80%;
+  width: 100%;
   color: var(--main-color);
 }
 
-.contact-text h1 {
+.contact-description {
+  padding: 0 24px;
+}
+
+.contact-text .main-contact {
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
@@ -291,19 +295,20 @@ image {
 }
 
 input {
-  margin: 20px 0;
+  margin: 20px 24px;
   font-size: 17px;
   line-height: 20px;
-  padding: 15px 38px 15px 16px;
+  padding: 15px;
   border-radius: 8px;
+  width: 100%;
+  align-self: center;
 }
 
 textarea {
-  width: 327px;
   height: 170px;
   font-size: 17px;
   line-height: 20px;
-  padding: 15px 38px 15px 16px;
+  padding: 15px;
   border-radius: 8px;
 }
 
@@ -318,6 +323,7 @@ textarea {
   line-height: 24px;
   font-weight: 600;
   color: var(--font-main-color);
+  background-color: var(--main-color);
 }
 
 .home-shape {
