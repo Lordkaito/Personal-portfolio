@@ -7,7 +7,7 @@
   --font-fourth-color: #7f8cff;
   --font-fifth-color: #7a869a;
   --tags-bck-color: #ebebff;
-  --separator-color: #dfe1E6;
+  --separator-color: #dfe1e6;
 }
 
 * {
@@ -224,7 +224,9 @@ image {
   margin-top: 36px;
 }
 
-.languages, .frameworks, .skills {
+.languages,
+.frameworks,
+.skills {
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
