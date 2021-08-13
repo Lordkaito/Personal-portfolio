@@ -20,6 +20,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .header {
   align-items: center;
   justify-content: space-between;
