@@ -187,14 +187,10 @@ image {
 }
 
 .action-btn,
-.action-btn-2{
+.action-btn-2 {
   text-decoration: none;
   color: var(--font-main-color);
   font-weight: 600;
-}
-
-.action-btn,
-.action-btn-2 {
   background-color: transparent;
   border: 1px solid;
   border-color: var(--font-main-color);
