@@ -5,9 +5,9 @@
   --font-secondary-color: #172b4d;
   --font-third-color: #344563;
   --font-fourth-color: #7f8cff;
-  --font-fifth-color: #7A869A;
+  --font-fifth-color: #7a869a;
   --tags-bck-color: #ebebff;
-  --separator-color: #DFE1E6;
+  --separator-color: #dfe1E6;
 }
 
 * {
@@ -110,7 +110,6 @@ body {
 .work-card {
   background-color: var(--main-color);
   flex-direction: column;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
@@ -187,13 +186,15 @@ image {
   color: var(--font-main-color);
 }
 
-.action-btn a, .action-btn-2 a {
+.action-btn a,
+.action-btn-2 a {
   text-decoration: none;
   color: var(--font-main-color);
   font-weight: 600;
 }
 
-.action-btn, .action-btn-2 {
+.action-btn,
+.action-btn-2 {
   background-color: transparent;
   border: 1px solid;
   border-color: var(--font-main-color);
@@ -233,7 +234,9 @@ image {
   background-color: transparent;
 }
 
-.js-frame, .html-frame, .css-frame {
+.js-frame,
+.html-frame,
+.css-frame {
   align-items: center;
   background-color: var(--section-color);
   margin: 12px 0;
@@ -241,7 +244,9 @@ image {
   border-radius: 8px;
 }
 
-.js-frame-text, .html-frame-text, .css-frame-text {
+.js-frame-text,
+.html-frame-text,
+.css-frame-text {
   margin: 0 0 0 16px;
 }
 
