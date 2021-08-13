@@ -292,6 +292,7 @@ image {
 
 .column {
   flex-direction: column;
+  margin: 0 24px;
 }
 
 input {
