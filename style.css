@@ -24,6 +24,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   align-items: center;
   justify-content: space-between;
@@ -331,11 +335,6 @@ textarea {
   margin-bottom: 8px;
 }
 
-.form-ul {
-  flex-direction: column;
-}
-
 .get-in-touch:active {
   background-color: #f3f3f3;
-
 }
