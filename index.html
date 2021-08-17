@@ -352,14 +352,16 @@
           needs coding. I'd love to help with it
         </p>
       </div>
-      <div class="column d-flex">
-        <input type="text" class="form-control" id="contact" placeholder="Your Name">
-        <input type="email" class="form-control" id="email" placeholder="Your Email">
-        <textarea class="form-control" id="message" placeholder="Your Message"></textarea>
-        <a class="get-in-touch">
-          Get in Touch
-        </a>
-      </div>
+      <form class="column d-flex" action="https://formspree.io/f/meqvpkpz" method="POST">
+        <ul class="d-flex form-ul">
+          <input type="text" maxlength="30" required class="form-control" id="contact" placeholder="Your Name" name="name">
+          <input type="email" requiered class="form-control" id="email" placeholder="Your Email" name="_replyto">
+          <textarea maxlength="500" requiered class="form-control" id="message" placeholder="Your Message" name="message"></textarea>
+          <button type="submit" class="get-in-touch">
+            Get in Touch
+          </button>
+        </ul>
+      </form>
       <div class="home-shape">
         <img src="./images/black-shape.png" alt="">
       </div>
