@@ -8,6 +8,7 @@
   --font-fifth-color: #7a869a;
   --tags-bck-color: #ebebff;
   --separator-color: #dfe1e6;
+  --btn-background-hover: #dbdbdb;
 }
 
 * {
@@ -142,7 +143,7 @@ image {
 }
 
 .name {
-  font-size: 32px;
+  font-size: 33px;
   font-weight: 700;
   line-height: 44px;
 }
@@ -206,12 +207,27 @@ image {
   border-radius: 8px;
 }
 
+.btn {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about-myself-section {
+  flex-direction: column;
+  background-color: #fff;
+  border-top-right-radius: 100px;
+}
+
 .about-myself {
   flex-direction: column;
   align-items: flex-start;
-  padding: 114px 24px;
-  border-top-right-radius: 100px;
-  background-color: #fff;
+  padding: 0 24px;
+  padding-top: 100px;
+}
+
+.about-skills {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 24px 114px 24px;
 }
 
 .action-btn-2 {
@@ -300,13 +316,20 @@ image {
 }
 
 input {
-  margin: 20px 24px;
   font-size: 17px;
   line-height: 20px;
   padding: 15px;
   border-radius: 8px;
   width: 100%;
   align-self: center;
+}
+
+input[type='text'] {
+  margin: 27px;
+}
+
+input[type='email'] {
+  margin-bottom: 27px;
 }
 
 textarea {
@@ -337,4 +360,186 @@ textarea {
 
 .get-in-touch:active {
   background-color: #f3f3f3;
+}
+
+.d-none {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .main-container {
+    background-image: url('./images/headerbg.svg');
+    align-items: center;
+    justify-content: center;
+    height: 93vh;
+  }
+
+  .logo {
+    margin-left: 7em;
+    animation-name: spin;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
+
+  .menu-container {
+    margin-right: 7em;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50rem;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
+  .d-none {
+    display: block;
+  }
+
+  .d-none-flex {
+    display: flex;
+  }
+
+  .d-none-flex li {
+    margin: 0 20px;
+  }
+
+  .d-none-flex li a:hover {
+    color: var(--font-main-color);
+  }
+
+  .desk-d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    width: auto;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--font-fifth-color) 0 0 10px;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+  .image-card img {
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image-card img:hover {
+    transform: scale(1.05);
+  }
+
+  .about-myself-section {
+    flex-direction: row;
+    padding: 142px;
+  }
+
+  .about-myself {
+    max-width: 40%;
+    padding-top: 0;
+  }
+
+  .about-skills {
+    max-width: 60%;
+    width: 100%;
+  }
+
+  .lang-container {
+    margin-top: 0;
+  }
+
+  .languages-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 50%;
+  }
+
+  .html-frame,
+  .css-frame,
+  .js-frame {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 12px;
+    width: 120px;
+    height: 120px;
+    padding: 16px;
+  }
+
+  .html-frame p,
+  .css-frame p,
+  .js-frame p {
+    margin: 0;
+    padding-top: 16px;
+    font-weight: 600;
+  }
+
+  .btn:hover {
+    background-color: var(--btn-background-hover);
+  }
+
+  .suporting-text:hover {
+    color: var(--font-main-color);
+  }
+
+  .get-in-touch {
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-text p {
+    width: 569px;
+  }
+
+  .main-contact,
+  .contact-description {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .main-contact:hover,
+  .contact-description:hover {
+    transform: translate(5px, -5px);
+  }
+
+  form.column {
+    width: 447px;
+  }
+
+  input,
+  textarea {
+    outline: none;
+  }
+
+  .home-shape {
+    display: none;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
