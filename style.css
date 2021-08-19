@@ -8,6 +8,7 @@
   --font-fifth-color: #7a869a;
   --tags-bck-color: #ebebff;
   --separator-color: #dfe1e6;
+  --btn-background-hover: #f4f4f4;
 }
 
 * {
@@ -435,7 +436,7 @@ textarea {
   }
 
   .btn:hover {
-    background-color: #f4f4f4;
+    background-color: var(--btn-background-hover);
   }
 
   .suporting-text:hover {
@@ -464,3 +465,4 @@ textarea {
     display: none;
   }
 }
+
