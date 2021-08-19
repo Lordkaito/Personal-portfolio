@@ -17,7 +17,7 @@ This is a personal portfolio project. It's being built along the Microverse cour
 
 ## Live Demo
 
-[Live Demo](https://lordkaito.github.io/Personal-portfolio/)
+[Live Demo](https://thirsty-wescoff-6ae9fb.netlify.app/)
 
 
 ### Prerequisites
