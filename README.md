@@ -17,7 +17,7 @@ This is a personal portfolio project. It's being built along the Microverse cour
 
 ## Live Demo
 
-No live demo yet.
+[Live Demo](https://lordkaito.github.io/Personal-portfolio/)
 
 
 ### Prerequisites
