@@ -333,18 +333,18 @@ input[type='email'] {
   margin-bottom: 27px;
 }
 
-input:focus-visible,
-textarea:focus-visible {
-  background-color: var(--font-secondary-color);
-  color: white;
-}
-
 textarea {
   height: 170px;
   font-size: 17px;
   line-height: 20px;
   padding: 15px;
   border-radius: 8px;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  background-color: var(--font-secondary-color);
+  color: white;
 }
 
 .get-in-touch {
