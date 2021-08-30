@@ -9,6 +9,7 @@
   --tags-bck-color: #ebebff;
   --separator-color: #dfe1e6;
   --btn-background-hover: #dbdbdb;
+  --before-100-left: 100%;
 }
 
 * {
@@ -548,4 +549,43 @@ textarea {
       transform: rotate(360deg);
     }
   }
+}
+
+.self-top {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  margin: 0!important;
+}
+
+.fas {
+  color: white;
+}
+
+.mobile-hidden {
+  background-color: rgba(96, 112, 255, .9);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 100%;
+  height: 100vh;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.mobile-hidden a {
+  color: white;
+}
+
+.mg-top {
+  margin-top: 5rem;
+}
+
+.mg-bottom {
+  margin-bottom: 2rem;
 }
