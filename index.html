@@ -19,10 +19,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto&display=swap"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/63ff2cfeab.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 
-<body>
+<body id="body">
   <header class="header d-flex">
     <div class="logo">
       <a href="#" class="logo-text">My Logo</a>
@@ -38,6 +39,20 @@
           </li>
           <li class="d-none">
             <a href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="mobile-hidden">
+          <li class="self-top">
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
+          </li>
+          <li class="mg-top mg-bottom">
+            <a href="#work-section" class="portfolio">Portfolio</a>
+          </li>
+          <li class="mg-bottom">
+            <a href="#about-me" class="mobile-about">About</a>
+          </li>
+          <li class="mg-bottom">
+            <a href="#contact-me" class="mobile-contact">Contact</a>
           </li>
         </ul>
         <a href="#">
@@ -67,27 +82,27 @@
       </div>
       <ul class="social-media-container d-flex">
         <li class="element">
-          <a class="social twitter" href="#"><img src="./images/twitter.svg" alt=""></a>
+          <a class="social twitter" href="#"><img src="./images/twitter.svg" alt="Isai's twitter"></a>
         </li>
         <li class="element">
-          <a class="social github" href="#"><img src="./images/linkedin.svg" alt=""></a>
+          <a class="social github" href="#"><img src="./images/linkedin.svg" alt="Isai's linkedin"></a>
         </li>
         <li class="element">
-          <a class="social" href="#"><img src="./images/mail.svg" alt=""></a>
+          <a class="social" href="#"><img src="./images/mail.svg" alt="Isai's mail"></a>
         </li>
         <li class="element">
-          <a class="social mail" href="#"><img src="./images/github.svg" alt=""></a>
+          <a class="social mail" href="#"><img src="./images/github.svg" alt="Isai's github"></a>
         </li>
         <li class="element">
-          <a class="social Linkedin" href="#"><img src="./images/other.svg" alt=""></a>
+          <a class="social Linkedin" href="#"><img src="./images/other.svg" alt="Isai's other media"></a>
         </li>
       </ul>
     </div>
   </section>
-  <section class="work-section-container d-grid">
+  <section id="work-section" class="work-section-container d-grid">
     <div class="work-card desk-d-grid d-flex ja-center">
       <div class="image-card">
-        <img src="./images/work-4.png" alt="" class="image">
+        <img src="./images/work-4.png" alt="project example" class="image">
       </div>
       <div class="text-card d-flex">
         <div class="primary-text">
@@ -132,7 +147,7 @@
     </div>
     <div class="work-card desk-d-grid d-flex ja-center">
       <div class="image-card order-2">
-        <img src="./images/work-3.png" alt="" class="image">
+        <img src="./images/work-3.png" alt="project example" class="image">
       </div>
       <div class="text-card d-flex">
         <div class="primary-text">
@@ -177,7 +192,7 @@
     </div>
     <div class="work-card desk-d-grid d-flex ja-center">
       <div class="image-card">
-        <img src="./images/work-2.png" alt="" class="image">
+        <img src="./images/work-2.png" alt="project example" class="image">
       </div>
       <div class="text-card d-flex">
         <div class="primary-text">
@@ -222,7 +237,7 @@
     </div>
     <div class="work-card desk-d-grid d-flex ja-center">
       <div class="image-card order-2">
-        <img src="./images/work-1.png" alt="" class="image">
+        <img src="./images/work-1.png" alt="project example" class="image">
       </div>
       <div class="text-card d-flex">
         <div class="primary-text">
@@ -266,13 +281,13 @@
       </div>
     </div>
   </section>
-  <section class="about-myself-section d-flex">
+  <section id="about-me" class="about-myself-section d-flex">
     <div class="d-flex about-myself">
       <div class="about-container">
-        <h1 class="about">
+        <h2 class="about">
           About <br>
           Myself
-        </h1>
+        </h2>
       </div>
       <div class="description-container">
         <p class="description">
@@ -287,19 +302,19 @@
       </div>
       <ul class="social-media-container d-flex">
         <li class="element">
-          <a class="twitter" href="#"><img src="./images/twitter.svg" alt="" class="social"></a>
+          <a class="twitter" href="#"><img src="./images/twitter.svg" alt="Isai's twitter" class="social"></a>
         </li>
         <li class="element">
-          <a class="github" href="#"><img src="./images/linkedin.svg" alt="" class="social"></a>
+          <a class="github" href="#"><img src="./images/linkedin.svg" alt="Isai's linkedin" class="social"></a>
         </li>
         <li class="element">
-          <a href="#"><img src="./images/mail.svg" alt="" class="social"></a>
+          <a href="#"><img src="./images/mail.svg" alt="Isai's mail" class="social"></a>
         </li>
         <li class="element">
-          <a class="mail" href="#"><img src="./images/github.svg" alt="" class="social"></a>
+          <a class="mail" href="#"><img src="./images/github.svg" alt="Isai's github" class="social"></a>
         </li>
         <li class="element">
-          <a class="Linkedin" href="#"><img src="./images/other.svg" alt="" class="social"></a>
+          <a class="Linkedin" href="#"><img src="./images/other.svg" alt="Isai's other media" class="social"></a>
         </li>
       </ul>
       <div class="action">
@@ -325,19 +340,19 @@
         <li>
           <ul class="languages-list">
             <li class="js-frame d-flex">
-              <img src="./images/js-frame.png" alt="">
+              <img src="./images/js-frame.png" alt="javaScript language">
               <p class="js-frame-text">
                 JavaScript
               </p>
             </li>
             <li class="html-frame d-flex">
-              <img src="./images/html-frame.png" alt="">
+              <img src="./images/html-frame.png" alt="html language">
               <p class="html-frame-text">
                 HTML
               </p>
             </li>
             <li class="css-frame d-flex">
-              <img src="./images/css-frame.png" alt="">
+              <img src="./images/css-frame.png" alt="css language">
               <p class="css-frame-text">
                 CSS
               </p>
@@ -369,7 +384,7 @@
       </ul>
     </div>
   </section>
-  <section class="contact">
+  <section id="contact-me" class="contact">
     <div class="contact-container d-flex">
       <div class="contact-text">
         <p class="main-contact">
@@ -395,5 +410,6 @@
       </div>
     </div>
   </section>
+  <script src="./index.js"></script>
 </body>
 </html>
