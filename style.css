@@ -555,7 +555,7 @@ textarea:focus-visible {
   position: absolute;
   top: 5%;
   right: 10%;
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 .fas {
@@ -563,7 +563,7 @@ textarea:focus-visible {
 }
 
 .mobile-hidden {
-  background-color: rgba(96, 112, 255, .9);
+  background-color: rgba(96, 112, 255, 0.9);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
