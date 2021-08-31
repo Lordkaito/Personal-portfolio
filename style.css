@@ -168,12 +168,14 @@ image {
   font-weight: 600;
 }
 
-.frame-img {
+.frame-img-1,
+.frame-img-2 {
   color: var(--font-fifth-color);
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .frame-img p {
@@ -588,4 +590,21 @@ textarea:focus-visible {
 
 .mg-bottom {
   margin-bottom: 2rem;
+}
+
+.positioning {
+  position: relative
+}
+
+.modal {
+  background-color: transparent;
+  border: 1px solid red;
+  width: 110%;
+  height: 150%;
+  position: absolute;
+  top: -20%;
+  left: -5%;
+  right: -5%;
+  bottom: 0%;
+  transition: all 0.3s ease-in-out;
 }
