@@ -5,15 +5,27 @@ const body = document.querySelector('body');
 const portfolio = document.querySelector('.portfolio');
 const about = document.querySelector('.mobile-about');
 const contact = document.querySelector('.mobile-contact');
+const html = document.querySelector('html');
 
+mobile.style = "display: none; "
 function open() {
-  mobile.style.left = '0';
+  mobile.style.display = 'block';
   body.style.overflow = 'hidden';
+  //set timeout to open menu
+  setTimeout(function() {
+    mobile.style.left = '0';
+  }
+  , 100);
 }
 
 function closeMenu() {
-  mobile.style.left = '100%';
+  //set timeout to close menu
+  setTimeout(function() {
+    mobile.style.display = 'none';
+  }
+  , 200);
   body.style.overflow = 'auto';
+  mobile.style.left = '100%';
 }
 
 hamburguer.addEventListener('click', open);

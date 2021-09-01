@@ -1,93 +1,203 @@
-var img1 = document.createElement('img');
-img1.className = "image obj-image-1";
-img1.alt = "project example"
-var img2 = document.createElement('img');
-img2.className = "image obj-image-2";
-img2.alt = "project example"
-var img3 = document.createElement('img');
-img3.className = "image obj-image-3";
-img3.alt = "project example"
-var img4 = document.createElement('img');
-img4.className = "image obj-image-4";
-img4.alt = "project example"
+//create the variables we are going to use
+const bodySelector = document.querySelector('body');
+const mainModalContainer = document.createElement('div');
+const closeCross = document.createElement('p');
+const firstCardBtn = document.querySelector('.obj-btn-1');
+const secondCardBtn = document.querySelector('.obj-btn-2');
+const thirdCardBtn = document.querySelector('.obj-btn-3');
+const fourthCardBtn = document.querySelector('.obj-btn-4');
+
+//create variables for images
+var firstCardImage = document.createElement('img');
+firstCardImage.className = "image obj-image-1";
+firstCardImage.alt = "project example"
+var secondCardImage = document.createElement('img');
+secondCardImage.className = "image obj-image-2";
+secondCardImage.alt = "project example"
+var thirdCardImage = document.createElement('img');
+thirdCardImage.className = "image obj-image-3";
+thirdCardImage.alt = "project example"
+var fourthCardImage = document.createElement('img');
+fourthCardImage.className = "image obj-image-4";
+fourthCardImage.alt = "project example"
 var imgCounter1 = document.createElement('img');
 var imgCounter2 = document.createElement('img');
+
+//create variables for the links we are going to use
 const SourceLink = "https://github.com/Lordkaito/Personal-portfolio";
 const LiveLink = "https://lordkaito.github.io/Personal-portfolio/";
 
+//create the objects we are going to use
 var firstProject = {
   "name": "Tonic",
   "frame": ["CANOPY", "Back end Dev", 2015],
   "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-  "featuredImage": img1.src = "./images/work-4.png",
+  "featuredImage": firstCardImage.src = "./images/work-4.png",
   "technologies": ["Html", "Css", "JavaScript"],
   "liveLink": LiveLink,
   "sourceLink": SourceLink,
-  "frameImg": [imgCounter1.src = "./images/Counter.png", imgCounter2.src = "./images/Counter.png"]
+  "frameImg": [imgCounter1.src = "./images/Counter.png", imgCounter2.src = "./images/Counter.png"],
+  "scrContainer": "scr-container1",
 }
 
-const btn1 = document.querySelector('.obj-btn-1');
-const btn2 = document.querySelector('.obj-btn-2');
-const btn3 = document.querySelector('.obj-btn-3');
-const btn4 = document.querySelector('.obj-btn-4');
+var secondProject = {
+  "name": "Multi-Post Stories",
+  "frame": ["CANOPY", "Back end Dev", 2015],
+  "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+  "featuredImage": secondCardImage.src = "./images/work-3.png",
+  "technologies": ["Html", "Css", "JavaScript"],
+  "liveLink": LiveLink,
+  "sourceLink": SourceLink,
+  "frameImg": [imgCounter1.src = "./images/Counter.png", imgCounter2.src = "./images/Counter.png"],
+}
 
-window.onload = function() {
-  document.querySelector('.obj-name').innerHTML = firstProject.name;
-  document.querySelector('.obj-frame-1').innerHTML = firstProject.frame[0];
-  document.querySelector('.frame-img-1').appendChild(imgCounter1);
-  document.querySelector('.obj-frame-2').innerHTML = firstProject.frame[1];
-  document.querySelector('.frame-img-2').appendChild(imgCounter2);
-  document.querySelector('.obj-frame-3').innerHTML = firstProject.frame[2];
-  document.querySelector('.obj-description').innerHTML = firstProject.description;
-  document.querySelector('.obj-tech-1').innerText = firstProject.technologies[0];
-  document.querySelector('.obj-tech-2').innerHTML = firstProject.technologies[1];
-  document.querySelector('.obj-tech-3').innerHTML = firstProject.technologies[2];
-  document.querySelector('.image-card').appendChild(img1);
+var thirdProject = {
+  "name": "Toni",
+  "frame": ["CANOPY", "Back end Dev", 2015],
+  "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+  "featuredImage": thirdCardImage.src = "./images/work-2.png",
+  "technologies": ["Html", "Css", "JavaScript"],
+  "liveLink": LiveLink,
+  "sourceLink": SourceLink,
+  "frameImg": [imgCounter1.src = "./images/Counter.png", imgCounter2.src = "./images/Counter.png"],
+}
+
+var fourthProject = {
+  "name": "Multi-Post Stories",
+  "frame": ["CANOPY", "Back end Dev", 2015],
+  "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+  "featuredImage": fourthCardImage.src = "./images/work-1.png",
+  "technologies": ["Html", "Css", "JavaScript"],
+  "liveLink": LiveLink,
+  "sourceLink": SourceLink,
+  "frameImg": [imgCounter1.src = "./images/Counter.png", imgCounter2.src = "./images/Counter.png"],
+}
+
+var arr = [firstProject, secondProject, thirdProject, fourthProject];
+
+//fucntion that loads once the page is loaded
+window.onload = function () {
+  document.querySelector('.obj-name-first').innerHTML = firstProject.name;
+  document.querySelector('.obj-frame-1-first').innerHTML = firstProject.frame[0];
+  // document.querySelector('.frame-img-1-first').appendChild(imgCounter1);
+  document.querySelector('.obj-frame-2-first').innerHTML = firstProject.frame[1];
+  // document.querySelector('.frame-img-2-first').appendChild(imgCounter2);
+  document.querySelector('.obj-frame-3-first').innerHTML = firstProject.frame[2];
+  document.querySelector('.obj-description-first').innerHTML = firstProject.description;
+  document.querySelector('.obj-tech-1-first').innerText = firstProject.technologies[0];
+  document.querySelector('.obj-tech-2-first').innerHTML = firstProject.technologies[1];
+  document.querySelector('.obj-tech-3-first').innerHTML = firstProject.technologies[2];
+  document.querySelector('.image-card-first').appendChild(firstCardImage);
+
+  //second project
+  document.querySelector('.image-card-second').appendChild(secondCardImage);
+  document.querySelector('.obj-name-second').innerHTML = secondProject.name;
+  document.querySelector('.obj-frame-1-second').innerHTML = secondProject.frame[0];
+  // document.querySelector('.frame-img-1-second').appendChild(imgCounter1);
+  document.querySelector('.obj-frame-2-second').innerHTML = secondProject.frame[1];
+  // document.querySelector('.frame-img-2-second').appendChild(imgCounter2);
+  document.querySelector('.obj-frame-3-second').innerHTML = secondProject.frame[2];
+  document.querySelector('.obj-description-second').innerHTML = secondProject.description;
+  document.querySelector('.obj-tech-1-second').innerText = secondProject.technologies[0];
+  document.querySelector('.obj-tech-2-second').innerHTML = secondProject.technologies[1];
+  document.querySelector('.obj-tech-3-second').innerHTML = secondProject.technologies[2];
+
+  //third project
+  document.querySelector('.obj-name-third').innerHTML = thirdProject.name;
+  document.querySelector('.obj-frame-1-third').innerHTML = thirdProject.frame[0];
+  // document.querySelector('.frame-img-1-third').appendChild(imgCounter1);
+  document.querySelector('.obj-frame-2-third').innerHTML = thirdProject.frame[1];
+  // document.querySelector('.frame-img-2-third').appendChild(imgCounter2);
+  document.querySelector('.obj-frame-3-third').innerHTML = thirdProject.frame[2];
+  document.querySelector('.obj-description-third').innerHTML = thirdProject.description;
+  document.querySelector('.obj-tech-1-third').innerText = thirdProject.technologies[0];
+  document.querySelector('.obj-tech-2-third').innerHTML = thirdProject.technologies[1];
+  document.querySelector('.obj-tech-3-third').innerHTML = thirdProject.technologies[2];
+  document.querySelector('.image-card-third').appendChild(thirdCardImage);
+
+  //fourth project
+  document.querySelector('.obj-name-fourth').innerHTML = fourthProject.name;
+  document.querySelector('.obj-frame-1-fourth').innerHTML = fourthProject.frame[0];
+  // document.querySelector('.frame-img-1-fourth').appendChild(imgCounter1);
+  document.querySelector('.obj-frame-2-fourth').innerHTML = fourthProject.frame[1];
+  // document.querySelector('.frame-img-2-fourth').appendChild(imgCounter2);
+  document.querySelector('.obj-frame-3-fourth').innerHTML = fourthProject.frame[2];
+  document.querySelector('.obj-description-fourth').innerHTML = fourthProject.description;
+  document.querySelector('.obj-tech-1-fourth').innerText = fourthProject.technologies[0];
+  document.querySelector('.obj-tech-2-fourth').innerHTML = fourthProject.technologies[1];
+  document.querySelector('.obj-tech-3-fourth').innerHTML = fourthProject.technologies[2];
+  document.querySelector('.image-card-fourth').appendChild(fourthCardImage);
 }
 
 
+//for the onload function
 
+// let workSection = document.querySelector('#work-section');
+// mainModalContainer.innerHTML = ``;
 
+//basic style for the modal
+mainModalContainer.style = "transform: scale(0); background-color: white; max-width: 100%; width: 100%; position: absolute; top: -20%; left: 0; right: 0; bottom: 0; transition: all 0.5s ease-in-out; border-radius: 20px; box-shadow: #7a869a 0 0 10px;";
+mainModalContainer.className = "modal-container";
 
+let workCard = document.querySelectorAll(".scr-container");
+workCard.forEach(function (card) {
+  card.classList.add("relative");
+  card.style = "position: relative;";
+});
 
+function modalObj(value) {
+  mainModalContainer.style.transform = "scale(1)";
+  mainModalContainer.innerHTML = `
+  <div class="modal-header">
+    <div class="modal-title">
+      <h1>${value.name}</h1>
+      <div class="modal-frame">
+        <h3>${value.frame[0]}</h3>
+        <img src="${value.frameImg[0]}" alt="frame">
+        <h3>${value.frame[1]}</h3>
+        <img src="${value.frameImg[1]}" alt="frame">
+        <h3>${value.frame[2]}</h3>
+      </div>
+    </div>
+    <a class="close-modal"> &times; </a>
+  </div>
+  <div class="modal-image">
+    <img src="${value.featuredImage}" alt="${value.name}">
+  </div>
+  <div class="modal-description">
+    <p>${value.description}</p>
+    <div class="modal-tech-link-container">
+      <div class="modal-tech">
+        <ul>
+          <li class="tag">${value.technologies[0]}</li>
+          <li class="tag">${value.technologies[1]}</li>
+          <li class="tag">${value.technologies[2]}</li>
+        </ul>
+      </div>
+      <div class="modal-links">
+        <a href="${value.githubLink}" target="_blank" class="action-btn">Github</a>
+        <a href="${value.liveLink}" target="_blank" class="action-btn">Live</a>
+      </div>
+    </div>
+  </div>`;
 
+  if (value == arr[0]) {
+    workCard[0].appendChild(mainModalContainer);
+  } else if (value == arr[1]) {
+    workCard[1].appendChild(mainModalContainer);
+  } else if (value == arr[2]) {
+    workCard[2].appendChild(mainModalContainer);
+  } else if (value == arr[3]) {
+    workCard[3].appendChild(mainModalContainer);
+  }
+  
+  let close = document.querySelector('.close-modal');
+  close.addEventListener('click', function () {
+    mainModalContainer.style.transform = "scale(0)" ;
+  });
+}
 
-
-
-
-
-
-
-
-
-// var modarlArray = [firstProject, secondProject, thirdProject, fourthProject];
-// var secondProject = {
-//   "name": "Multi-Post Stories",
-//   "frame": ["CANOPY", "Back end Dev", 2015],
-//   "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-//   "featuredImage": img2.src = "./images/work-3.png",
-//   "technologies": ["Html", "Css", "JavaScript"],
-//   "liveLink": LiveLink,
-//   "sourceLink": SourceLink,
-// }
-
-// var thirdProject = {
-//   "name": "Toni",
-//   "frame": ["CANOPY", "Back end Dev", 2015],
-//   "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-//   "featuredImage": img3.src = "./images/work-2.png",
-//   "technologies": ["Html", "Css", "JavaScript"],
-//   "liveLink": LiveLink,
-//   "sourceLink": SourceLink,
-// }
-
-// var fourthProject = {
-//   "name": "Multi-Post Stories",
-//   "frame": ["CANOPY", "Back end Dev", 2015],
-//   "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-//   "featuredImage": img4.src = "./images/work-1.png",
-//   "technologies": ["Html", "Css", "JavaScript"],
-//   "liveLink": LiveLink,
-//   "sourceLink": SourceLink,
-// }
-
+firstCardBtn.addEventListener('click', modalObj.bind(null, arr[0]));
+secondCardBtn.addEventListener('click', modalObj.bind(null, arr[1]));
+thirdCardBtn.addEventListener('click', modalObj.bind(null, arr[2]));
+fourthCardBtn.addEventListener('click', modalObj.bind(null, arr[3]));
