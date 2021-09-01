@@ -19,7 +19,6 @@ const fourthCardImage = document.createElement('img');
 fourthCardImage.className = 'image obj-image-4';
 fourthCardImage.alt = 'project example';
 const imgCounter1 = document.createElement('img');
-const imgCounter2 = document.createElement('img');
 
 // create variables for the links we are going to use
 const SourceLink = 'https://github.com/Lordkaito/Personal-portfolio';
@@ -28,132 +27,229 @@ const LiveLink = 'https://lordkaito.github.io/Personal-portfolio/';
 // create the objects we are going to use
 const firstProject = {
   name: 'Tonic',
-  frame: ['CANOPY', 'Back end Dev', 2015],
+  frame1: 'CANOPY',
+  frame2: 'Back end Dev',
+  frame3: 2015,
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   featuredImage: firstCardImage.src = './images/work-4.png',
-  technologies: ['Html', 'Css', 'JavaScript'],
+  technologies1: 'Html',
+  technologies2: 'Css',
+  technologies3: 'JavaScript',
   liveLink: LiveLink,
   sourceLink: SourceLink,
-  frameImg: [imgCounter1.src = './images/Counter.png', imgCounter2.src = './images/Counter.png'],
+  frameImg: imgCounter1.src = './images/Counter.png',
   scrContainer: 'scr-container1',
 };
 
 const secondProject = {
   name: 'Multi-Post Stories',
-  frame: ['CANOPY', 'Back end Dev', 2015],
+  frame1: 'CANOPY',
+  frame2: 'Back end Dev',
+  frame3: 2015,
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   featuredImage: secondCardImage.src = './images/work-3.png',
-  technologies: ['Html', 'Css', 'JavaScript'],
+  technologies1: 'Html',
+  technologies2: 'Css',
+  technologies3: 'JavaScript',
   liveLink: LiveLink,
   sourceLink: SourceLink,
-  frameImg: [imgCounter1.src = './images/Counter.png', imgCounter2.src = './images/Counter.png'],
+  frameImg: imgCounter1.src = './images/Counter.png',
 };
 
 const thirdProject = {
   name: 'Toni',
-  frame: ['CANOPY', 'Back end Dev', 2015],
+  frame1: 'CANOPY',
+  frame2: 'Back end Dev',
+  frame3: 2015,
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   featuredImage: thirdCardImage.src = './images/work-2.png',
-  technologies: ['Html', 'Css', 'JavaScript'],
+  technologies1: 'Html',
+  technologies2: 'Css',
+  technologies3: 'JavaScript',
   liveLink: LiveLink,
   sourceLink: SourceLink,
-  frameImg: [imgCounter1.src = './images/Counter.png', imgCounter2.src = './images/Counter.png'],
+  frameImg: imgCounter1.src = './images/Counter.png',
 };
 
 const fourthProject = {
   name: 'Multi-Post Stories',
-  frame: ['CANOPY', 'Back end Dev', 2015],
+  frame1: 'CANOPY',
+  frame2: 'Back end Dev',
+  frame3: 2015,
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   featuredImage: fourthCardImage.src = './images/work-1.png',
-  technologies: ['Html', 'Css', 'JavaScript'],
+  technologies1: 'Html',
+  technologies2: 'Css',
+  technologies3: 'JavaScript',
   liveLink: LiveLink,
   sourceLink: SourceLink,
-  frameImg: [imgCounter1.src = './images/Counter.png', imgCounter2.src = './images/Counter.png'],
+  frameImg: imgCounter1.src = './images/Counter.png',
 };
 
-const arr = [firstProject, secondProject, thirdProject, fourthProject];
+const objArray = [firstProject, secondProject, thirdProject, fourthProject];
 
 // fucntion that loads once the page is loaded
 window.onload = () => {
-  document.querySelector('.obj-name-first').innerHTML = firstProject.name;
-  document.querySelector('.obj-frame-1-first').innerHTML = firstProject.frame[0];
-  // document.querySelector('.frame-img-1-first').appendChild(imgCounter1);
-  document.querySelector('.obj-frame-2-first').innerHTML = firstProject.frame[1];
-  // document.querySelector('.frame-img-2-first').appendChild(imgCounter2);
-  document.querySelector('.obj-frame-3-first').innerHTML = firstProject.frame[2];
-  document.querySelector('.obj-description-first').innerHTML = firstProject.description;
-  document.querySelector('.obj-tech-1-first').innerText = firstProject.technologies[0];
-  document.querySelector('.obj-tech-2-first').innerHTML = firstProject.technologies[1];
-  document.querySelector('.obj-tech-3-first').innerHTML = firstProject.technologies[2];
-  document.querySelector('.image-card-first').appendChild(firstCardImage);
+  const {
+    name,
+    frame1,
+    frame2,
+    frame3,
+    description,
+    featuredImage,
+    technologies1,
+    technologies2,
+    technologies3,
+  } = firstProject;
 
-  // second project
-  document.querySelector('.image-card-second').appendChild(secondCardImage);
-  document.querySelector('.obj-name-second').innerHTML = secondProject.name;
-  document.querySelector('.obj-frame-1-second').innerHTML = secondProject.frame[0];
-  // document.querySelector('.frame-img-1-second').appendChild(imgCounter1);
-  document.querySelector('.obj-frame-2-second').innerHTML = secondProject.frame[1];
-  // document.querySelector('.frame-img-2-second').appendChild(imgCounter2);
-  document.querySelector('.obj-frame-3-second').innerHTML = secondProject.frame[2];
-  document.querySelector('.obj-description-second').innerHTML = secondProject.description;
-  document.querySelector('.obj-tech-1-second').innerText = secondProject.technologies[0];
-  document.querySelector('.obj-tech-2-second').innerHTML = secondProject.technologies[1];
-  document.querySelector('.obj-tech-3-second').innerHTML = secondProject.technologies[2];
+  const {
+    name: name2,
+    frame1: frame4,
+    frame2: frame5,
+    frame3: frame6,
+    description: description2,
+    featuredImage: featuredImage2,
+    technologies1: technologies4,
+    technologies2: technologies5,
+    technologies3: technologies6,
+  } = secondProject;
 
-  // third project
-  document.querySelector('.obj-name-third').innerHTML = thirdProject.name;
-  document.querySelector('.obj-frame-1-third').innerHTML = thirdProject.frame[0];
-  // document.querySelector('.frame-img-1-third').appendChild(imgCounter1);
-  document.querySelector('.obj-frame-2-third').innerHTML = thirdProject.frame[1];
-  // document.querySelector('.frame-img-2-third').appendChild(imgCounter2);
-  document.querySelector('.obj-frame-3-third').innerHTML = thirdProject.frame[2];
-  document.querySelector('.obj-description-third').innerHTML = thirdProject.description;
-  document.querySelector('.obj-tech-1-third').innerText = thirdProject.technologies[0];
-  document.querySelector('.obj-tech-2-third').innerHTML = thirdProject.technologies[1];
-  document.querySelector('.obj-tech-3-third').innerHTML = thirdProject.technologies[2];
-  document.querySelector('.image-card-third').appendChild(thirdCardImage);
+  const {
+    name: name3,
+    frame1: frame7,
+    frame2: frame8,
+    frame3: frame9,
+    description: description3,
+    featuredImage: featuredImage3,
+    technologies1: technologies7,
+    technologies2: technologies8,
+    technologies3: technologies9,
+  } = thirdProject;
 
-  // fourth project
-  document.querySelector('.obj-name-fourth').innerHTML = fourthProject.name;
-  document.querySelector('.obj-frame-1-fourth').innerHTML = fourthProject.frame[0];
-  // document.querySelector('.frame-img-1-fourth').appendChild(imgCounter1);
-  document.querySelector('.obj-frame-2-fourth').innerHTML = fourthProject.frame[1];
-  // document.querySelector('.frame-img-2-fourth').appendChild(imgCounter2);
-  document.querySelector('.obj-frame-3-fourth').innerHTML = fourthProject.frame[2];
-  document.querySelector('.obj-description-fourth').innerHTML = fourthProject.description;
-  document.querySelector('.obj-tech-1-fourth').innerText = fourthProject.technologies[0];
-  document.querySelector('.obj-tech-2-fourth').innerHTML = fourthProject.technologies[1];
-  document.querySelector('.obj-tech-3-fourth').innerHTML = fourthProject.technologies[2];
-  document.querySelector('.image-card-fourth').appendChild(fourthCardImage);
+  const {
+    name: name4,
+    frame1: frame10,
+    frame2: frame11,
+    frame3: frame12,
+    description: description4,
+    featuredImage: featuredImage4,
+    technologies1: technologies10,
+    technologies2: technologies11,
+    technologies3: technologies12,
+  } = fourthProject;
+
+  // variables for first card and its content
+  const objNameFirst = document.querySelector('.obj-name-first');
+  const objFrame1First = document.querySelector('.obj-frame-1-first');
+  const objFrame2First = document.querySelector('.obj-frame-2-first');
+  const objFrame3First = document.querySelector('.obj-frame-3-first');
+  const objDescriptionFirst = document.querySelector('.obj-description-first');
+  const objTech1First = document.querySelector('.obj-tech-1-first');
+  const objTech2First = document.querySelector('.obj-tech-2-first');
+  const objTech3First = document.querySelector('.obj-tech-3-first');
+  const imageCardFirst = document.querySelector('.image-card-first');
+
+  // variables for second card and its content
+  const imageCardSecond = document.querySelector('.image-card-second');
+  const objNameSecond = document.querySelector('.obj-name-second');
+  const objFrame1Second = document.querySelector('.obj-frame-1-second');
+  const objFrame2Second = document.querySelector('.obj-frame-2-second');
+  const objFrame3Second = document.querySelector('.obj-frame-3-second');
+  const objDescriptionSecond = document.querySelector('.obj-description-second');
+  const objTech1Second = document.querySelector('.obj-tech-1-second');
+  const objTech2Second = document.querySelector('.obj-tech-2-second');
+  const objTech3Second = document.querySelector('.obj-tech-3-second');
+
+  // variables for third card and its content
+  const objNameThird = document.querySelector('.obj-name-third');
+  const objFrame1Third = document.querySelector('.obj-frame-1-third');
+  const objFrame2Third = document.querySelector('.obj-frame-2-third');
+  const objFrame3Third = document.querySelector('.obj-frame-3-third');
+  const objDescriptionThird = document.querySelector('.obj-description-third');
+  const objTech1Third = document.querySelector('.obj-tech-1-third');
+  const objTech2Third = document.querySelector('.obj-tech-2-third');
+  const objTech3Third = document.querySelector('.obj-tech-3-third');
+  const imageCardThird = document.querySelector('.image-card-third');
+
+  // variables for fourth card and its content
+  const objNameFourth = document.querySelector('.obj-name-fourth');
+  const objFrame1Fourth = document.querySelector('.obj-frame-1-fourth');
+  const objFrame2Fourth = document.querySelector('.obj-frame-2-fourth');
+  const objFrame3Fourth = document.querySelector('.obj-frame-3-fourth');
+  const objDescriptionFourth = document.querySelector('.obj-description-fourth');
+  const objTech1Fourth = document.querySelector('.obj-tech-1-fourth');
+  const objTech2Fourth = document.querySelector('.obj-tech-2-fourth');
+  const objTech3Fourth = document.querySelector('.obj-tech-3-fourth');
+  const imageCardFourth = document.querySelector('.image-card-fourth');
+
+  // create first card
+  objNameFirst.innerHTML = name;
+  objFrame1First.innerHTML = frame1;
+  objFrame2First.innerHTML = frame2;
+  objFrame3First.innerHTML = frame3;
+  objDescriptionFirst.innerHTML = description;
+  objTech1First.innerHTML = technologies1;
+  objTech2First.innerHTML = technologies2;
+  objTech3First.innerHTML = technologies3;
+  imageCardFirst.src = featuredImage;
+
+  // create second card
+  objNameSecond.innerHTML = name2;
+  objFrame1Second.innerHTML = frame4;
+  objFrame2Second.innerHTML = frame5;
+  objFrame3Second.innerHTML = frame6;
+  objDescriptionSecond.innerHTML = description2;
+  objTech1Second.innerHTML = technologies4;
+  objTech2Second.innerHTML = technologies5;
+  objTech3Second.innerHTML = technologies6;
+  imageCardSecond.src = featuredImage2;
+
+  // create third card
+  objNameThird.innerHTML = name3;
+  objFrame1Third.innerHTML = frame7;
+  objFrame2Third.innerHTML = frame8;
+  objFrame3Third.innerHTML = frame9;
+  objDescriptionThird.innerHTML = description3;
+  objTech1Third.innerHTML = technologies7;
+  objTech2Third.innerHTML = technologies8;
+  objTech3Third.innerHTML = technologies9;
+  imageCardThird.src = featuredImage3;
+
+  // create fourth card
+  objNameFourth.innerHTML = name4;
+  objFrame1Fourth.innerHTML = frame10;
+  objFrame2Fourth.innerHTML = frame11;
+  objFrame3Fourth.innerHTML = frame12;
+  objDescriptionFourth.innerHTML = description4;
+  objTech1Fourth.innerHTML = technologies10;
+  objTech2Fourth.innerHTML = technologies11;
+  objTech3Fourth.innerHTML = technologies12;
+  imageCardFourth.src = featuredImage4;
+
+  // append all images to the cards
+  imageCardFirst.appendChild(firstCardImage);
+  imageCardSecond.appendChild(secondCardImage);
+  imageCardThird.appendChild(thirdCardImage);
+  imageCardFourth.appendChild(fourthCardImage);
 };
-
-// for the onload function
-
-// let workSection = document.querySelector('#work-section');
-// mainModalContainer.innerHTML = ``;
-
-// basic style for the modal
-mainModalContainer.style = 'transform: scale(0); background-color: white; max-width: 100%; width: 100%; position: absolute; top: -20%; left: 0; right: 0; bottom: 0; transition: all 0.5s ease-in-out; border-radius: 20px; box-shadow: #7a869a 0 0 10px;';
-mainModalContainer.className = 'modal-container';
 
 const workCard = document.querySelectorAll('.scr-container');
 workCard.forEach((card) => {
   card.classList.add('relative');
-  card.style = 'position: relative;';
 });
 
 function modalObj(value) {
-  mainModalContainer.style.transform = 'scale(1)';
+  mainModalContainer.className = ('modal-container');
   mainModalContainer.innerHTML = `
   <div class='modal-header'>
     <div class='modal-title'>
       <h1>${value.name}</h1>
       <div class='modal-frame'>
-        <h3>${value.frame[0]}</h3>
-        <img src='${value.frameImg[0]}' alt='frame'>
-        <h3>${value.frame[1]}</h3>
-        <img src='${value.frameImg[1]}' alt='frame'>
-        <h3>${value.frame[2]}</h3>
+        <h3>${value.frame1}</h3>
+        <img src='${value.frameImg}' alt='frame'>
+        <h3>${value.frame2}</h3>
+        <img src='${value.frameImg}' alt='frame'>
+        <h3>${value.frame3}</h3>
       </div>
     </div>
     <a class='close-modal'> &times; </a>
@@ -166,9 +262,9 @@ function modalObj(value) {
     <div class='modal-tech-link-container'>
       <div class='modal-tech'>
         <ul>
-          <li class='tag'>${value.technologies[0]}</li>
-          <li class='tag'>${value.technologies[1]}</li>
-          <li class='tag'>${value.technologies[2]}</li>
+          <li class='tag'>${value.technologies1}</li>
+          <li class='tag'>${value.technologies2}</li>
+          <li class='tag'>${value.technologies3}</li>
         </ul>
       </div>
       <div class='modal-links'>
@@ -178,22 +274,23 @@ function modalObj(value) {
     </div>
   </div>`;
 
-  if (value === arr[0]) {
+  if (value === objArray[0]) {
     workCard[0].appendChild(mainModalContainer);
-  } else if (value === arr[1]) {
+  } else if (value === objArray[1]) {
     workCard[1].appendChild(mainModalContainer);
-  } else if (value === arr[2]) {
+  } else if (value === objArray[2]) {
     workCard[2].appendChild(mainModalContainer);
-  } else if (value === arr[3]) {
+  } else if (value === objArray[3]) {
     workCard[3].appendChild(mainModalContainer);
   }
-  const close = document.querySelector('.close-modal');
-  close.addEventListener('click', () => {
-    mainModalContainer.style.transform = 'scale(0)';
+
+  const closeModal = document.querySelector('.close-modal');
+  closeModal.addEventListener('click', () => {
+    mainModalContainer.className = 'modal-container modal-container-hide';
   });
 }
 
-firstCardBtn.addEventListener('click', modalObj.bind(null, arr[0]));
-secondCardBtn.addEventListener('click', modalObj.bind(null, arr[1]));
-thirdCardBtn.addEventListener('click', modalObj.bind(null, arr[2]));
-fourthCardBtn.addEventListener('click', modalObj.bind(null, arr[3]));
+firstCardBtn.addEventListener('click', modalObj.bind(null, objArray[0]));
+secondCardBtn.addEventListener('click', modalObj.bind(null, objArray[1]));
+thirdCardBtn.addEventListener('click', modalObj.bind(null, objArray[2]));
+fourthCardBtn.addEventListener('click', modalObj.bind(null, objArray[3]));
