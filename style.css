@@ -419,6 +419,15 @@ textarea:focus-visible {
     margin: 0 20px;
   }
 
+  .modal-header a {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .modal-links a:hover {
+    background-color: var(--btn-background-hover);
+  }
+
   .d-none-flex li a:hover {
     color: var(--font-main-color);
   }
@@ -445,6 +454,14 @@ textarea:focus-visible {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease-in-out;
+  }
+
+  .modal-frame img {
+    object-fit: contain;
+  }
+
+  .modal-image img {
+    width: 50%;
   }
 
   .image-card img:hover {
@@ -548,12 +565,12 @@ textarea:focus-visible {
     background-color: white;
     max-width: 100%;
     width: 100%;
-    height: calc(150%)!important;
+    height: calc(150%) !important;
     position: absolute;
-    inset: -20% 0px 0px;
+    inset: -20% 0 0;
     transition: all 0.5s ease-in-out 0s;
     border-radius: 20px;
-    box-shadow: rgb(122 134 154) 0px 0px 10px;
+    box-shadow: rgb(122 134 154) 0 0 10px;
     transform: scale(1);
     padding: 2rem;
   }
@@ -562,11 +579,6 @@ textarea:focus-visible {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .modal-header a {
-    font-size: 2rem;
-    cursor: pointer;
   }
 
   .modal-title {
@@ -579,18 +591,10 @@ textarea:focus-visible {
     gap: 1rem;
   }
 
-  .modal-frame img {
-    object-fit: contain;
-  }
-
   .modal-image {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-
-  .modal-image img {
-    width: 50%;
   }
 
   .modal-description {
@@ -620,10 +624,6 @@ textarea:focus-visible {
     gap: 1rem;
     border-top: 1px solid black;
     padding-top: 1rem;
-  }
-
-  .modal-links a:hover {
-    background-color: var(--btn-background-hover);
   }
 
   @keyframes spin {
@@ -696,6 +696,7 @@ textarea:focus-visible {
 .modal-header a {
   font-size: 1.5rem;
 }
+
 .modal-frame {
   display: flex;
   gap: 0.7rem;
