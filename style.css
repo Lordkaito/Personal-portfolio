@@ -776,3 +776,12 @@ textarea:focus-visible {
 .modal-container-hide {
   transform: scale(0);
 }
+
+.error,
+.error input:focus-visible {
+  border: 2px solid red !important;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(228, 172, 172) !important;
+  color: #fff !important;
+}
