@@ -6,14 +6,23 @@ const portfolio = document.querySelector('.portfolio');
 const about = document.querySelector('.mobile-about');
 const contact = document.querySelector('.mobile-contact');
 
+mobile.style = 'display: none';
 function open() {
-  mobile.style.left = '0';
+  mobile.style.display = 'block';
   body.style.overflow = 'hidden';
+  // set timeout to open menu
+  setTimeout(() => {
+    mobile.style.left = '0';
+  }, 100);
 }
 
 function closeMenu() {
-  mobile.style.left = '100%';
+  // set timeout to close menu
+  setTimeout(() => {
+    mobile.style.display = 'none';
+  }, 200);
   body.style.overflow = 'auto';
+  mobile.style.left = '100%';
 }
 
 hamburguer.addEventListener('click', open);
