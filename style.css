@@ -779,7 +779,9 @@ textarea:focus-visible {
 
 .error,
 .error input:focus-visible {
-  outline: 2px solid red !important;
-  background-color: #fff !important;
-  color: #000 !important;
+  border: 2px solid red !important;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(228, 172, 172) !important;
+  color: #fff !important;
 }
