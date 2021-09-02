@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T2XGYXWC81"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T2XGYXWC81"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-T2XGYXWC81');
-</script>
+    gtag('config', 'G-T2XGYXWC81');
+  </script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -380,8 +380,8 @@
         </p>
       </div>
       <form class="column d-flex" action="https://formspree.io/f/meqvpkpz" method="POST">
-        <input type="text" maxlength="30" required class="form-control" id="contact" placeholder="Your Name"
-          name="name">
+        <input type="text" maxlength="30" class="form-control" id="contact" placeholder="Your Name" name="name"
+          required>
         <input type="email" class="form-control" id="email" placeholder="Your Email" name="_replyto" required>
         <textarea maxlength="500" class="form-control" id="message" placeholder="Your Message" name="message"
           required></textarea>
@@ -394,7 +394,9 @@
       </div>
     </div>
   </section>
+  <script src="validation.js"></script>
   <script src="./index.js"></script>
   <script src="./popup.js"></script>
 </body>
+
 </html>
