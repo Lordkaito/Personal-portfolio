@@ -291,6 +291,6 @@ function modalObj(value) {
 }
 
 firstCardBtn.addEventListener('click', modalObj.bind(null, objArray[0]));
-secondCardBtn.addEventListener('click', modalObj.bind(null, objArray[1]));
-thirdCardBtn.addEventListener('click', modalObj.bind(null, objArray[2]));
-fourthCardBtn.addEventListener('click', modalObj.bind(null, objArray[3]));
+secondCardBtn.addEventListener('click', modalObj.bind(null, objArray[0]));
+thirdCardBtn.addEventListener('click', modalObj.bind(null, objArray[0]));
+fourthCardBtn.addEventListener('click', modalObj.bind(null, objArray[0]));
