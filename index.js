@@ -21,7 +21,7 @@ function closeMenu() {
   setTimeout(() => {
     mobile.style.display = 'none';
   }, 200);
-  body.style.overflow = 'auto';
+  body.style.overflow = 'hidden';
   mobile.style.left = '100%';
 }
 
