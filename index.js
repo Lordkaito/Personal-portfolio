@@ -6,26 +6,25 @@ const portfolio = document.querySelector('.portfolio');
 const about = document.querySelector('.mobile-about');
 const contact = document.querySelector('.mobile-contact');
 
-mobile.style = 'display: none';
-function open() {
-  mobile.style.display = 'block';
-  body.style.overflow = 'hidden';
+const openMenu = () => {
+  mobile.style.display = 'flex';
+  body.style.overflowY = 'hidden';
   // set timeout to open menu
   setTimeout(() => {
     mobile.style.left = '0';
   }, 100);
-}
+};
 
-function closeMenu() {
+const closeMenu = () => {
   // set timeout to close menu
   setTimeout(() => {
     mobile.style.display = 'none';
   }, 200);
   body.style.overflow = 'auto';
   mobile.style.left = '100%';
-}
+};
 
-hamburguer.addEventListener('click', open);
+hamburguer.addEventListener('click', openMenu);
 close.addEventListener('click', closeMenu);
 portfolio.addEventListener('click', closeMenu);
 about.addEventListener('click', closeMenu);

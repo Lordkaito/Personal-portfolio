@@ -8,8 +8,9 @@
   --font-fifth-color: #7a869a;
   --tags-bck-color: #ebebff;
   --separator-color: #dfe1e6;
-  --btn-background-hover: #dbdbdb;
+  --btn-background-hover: #6070ff;
   --before-100-left: 100%;
+  --btn-hover-text: #fff;
 }
 
 * {
@@ -52,6 +53,7 @@ body {
   min-height: 100vh;
   margin: 0;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .about {
@@ -137,6 +139,14 @@ body {
 image {
   width: 295px;
   height: 220px;
+}
+
+.modal-image-1,
+.modal-image-2,
+.modal-image-3,
+.modal-image-4 {
+  max-width: 300px;
+  border-radius: 5px;
 }
 
 .text-card {
@@ -357,19 +367,21 @@ textarea:focus-visible {
   padding: 12px 16px;
   border-radius: 8px;
   margin-bottom: 45px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  color: var(--font-main-color);
-  background-color: var(--main-color);
+  color: var(--main-color);
+  background-color: var(--font-main-color);
+  border: 1px solid var(--main-color);
+}
+
+.get-in-touch:hover {
+  color: var(--font-main-color) !important;
+  background-color: var(--main-color) !important;
 }
 
 .home-shape {
   margin-bottom: 8px;
-}
-
-.get-in-touch:active {
-  background-color: #f3f3f3;
 }
 
 .d-none {
@@ -377,6 +389,21 @@ textarea:focus-visible {
 }
 
 @media screen and (min-width: 992px) {
+  .modal-image-1,
+  .modal-image-2,
+  .modal-image-3,
+  .modal-image-4 {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .work-card {
+    width: 100%;
+    max-width: 700px;
+  }
+
   .main-container {
     background-image: url('./images/headerbg.svg');
     align-items: center;
@@ -428,7 +455,8 @@ textarea:focus-visible {
   }
 
   .modal-links a:hover {
-    background-color: var(--btn-background-hover);
+    background-color: var(--font-main-color);
+    color: var(--main-color);
   }
 
   .d-none-flex li a:hover {
@@ -439,7 +467,6 @@ textarea:focus-visible {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 80%;
-    width: auto;
     padding: 24px;
     align-items: center;
     justify-content: center;
@@ -463,10 +490,7 @@ textarea:focus-visible {
 
   .modal-image img {
     width: 50%;
-  }
-
-  .image-card img:hover {
-    transform: scale(1.05);
+    border-radius: 5px;
   }
 
   .about-myself-section {
@@ -515,6 +539,7 @@ textarea:focus-visible {
 
   .btn:hover {
     background-color: var(--btn-background-hover);
+    color: var(--btn-hover-text);
   }
 
   .suporting-text:hover {
@@ -617,6 +642,7 @@ textarea:focus-visible {
 
   .modal-image {
     width: 100%;
+    max-width: 80%;
     display: flex;
     justify-content: center;
   }
@@ -639,6 +665,8 @@ textarea:focus-visible {
 
   .modal-tech ul {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .modal-links {
@@ -674,18 +702,18 @@ textarea:focus-visible {
 
 .mobile-hidden {
   background-color: rgba(96, 112, 255, 0.9);
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  top: 0%;
-  right: 0%;
-  left: 100%;
-  height: 100vh;
-  width: 100%;
   transition: all 0.3s ease-in-out;
   padding: 2rem;
   font-size: 2rem;
+  display: none;
+  top: 0;
+  right: -100px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .mobile-hidden a {

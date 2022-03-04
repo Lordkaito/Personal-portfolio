@@ -7,82 +7,82 @@ const fourthCardBtn = document.querySelector('.obj-btn-4');
 
 // create variables for images
 const firstCardImage = document.createElement('img');
-firstCardImage.className = 'image obj-image-1';
+firstCardImage.className = 'image obj-image-1 modal-image-1';
 firstCardImage.alt = 'project example';
 const secondCardImage = document.createElement('img');
-secondCardImage.className = 'image obj-image-2';
+secondCardImage.className = 'image obj-image-2 modal-image-2';
 secondCardImage.alt = 'project example';
 const thirdCardImage = document.createElement('img');
-thirdCardImage.className = 'image obj-image-3';
+thirdCardImage.className = 'image obj-image-3 modal-image-3';
 thirdCardImage.alt = 'project example';
 const fourthCardImage = document.createElement('img');
-fourthCardImage.className = 'image obj-image-4';
+fourthCardImage.className = 'image obj-image-4 modal-image-4';
 fourthCardImage.alt = 'project example';
 const imgCounter1 = document.createElement('img');
 
 // create variables for the links we are going to use
-const SourceLink = 'https://github.com/Lordkaito/Personal-portfolio';
+// const SourceLink = 'https://github.com/Lordkaito/Personal-portfolio';
 const LiveLink = 'https://lordkaito.github.io/Personal-portfolio/';
-
+//
 // create the objects we are going to use
 const firstProject = {
-  name: 'Tonic',
-  frame1: 'CANOPY',
-  frame2: 'Back end Dev',
-  frame3: 2015,
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: firstCardImage.src = './images/work-4.png',
-  technologies1: 'Html',
-  technologies2: 'Css',
-  technologies3: 'JavaScript',
-  liveLink: LiveLink,
-  sourceLink: SourceLink,
+  name: 'CV React app',
+  frame1: 'Lordkaito',
+  frame2: 'Full Stack Developer',
+  frame3: 2021,
+  description: 'An app to keep track of the Covid-19 situation in the world. It is a React app that uses the Covid-19 API to get the data and display it in a clean and easy to use way.',
+  featuredImage: firstCardImage.src = './images/cv-half.jpeg',
+  technologies1: 'Html/Css',
+  technologies2: 'JavaScript',
+  technologies3: 'React/Redux',
+  liveLink: 'https://silly-almeida-f20b56.netlify.app/',
+  sourceLink: 'https://github.com/Lordkaito/redux-capstone',
   frameImg: imgCounter1.src = './images/Counter.png',
   scrContainer: 'scr-container1',
 };
 
 const secondProject = {
-  name: 'Multi-Post Stories',
-  frame1: 'CANOPY',
-  frame2: 'Back end Dev',
-  frame3: 2015,
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: secondCardImage.src = './images/work-3.png',
-  technologies1: 'Html',
-  technologies2: 'Css',
-  technologies3: 'JavaScript',
+  name: 'Bookstore',
+  frame1: 'Lordkaito',
+  frame2: 'Full Stack Developer',
+  frame3: 2021,
+  description: 'App to store your books locally to track your reading progress. It is developed using React and Redux.',
+  featuredImage: secondCardImage.src = './images/bookstore.jpeg',
+  technologies1: 'Html/CSS',
+  technologies2: 'JavaScript',
+  technologies3: 'React/Redux',
   liveLink: LiveLink,
-  sourceLink: SourceLink,
+  sourceLink: 'https://silly-almeida-f20b56.netlify.app/',
   frameImg: imgCounter1.src = './images/Counter.png',
 };
 
 const thirdProject = {
-  name: 'Toni',
-  frame1: 'CANOPY',
-  frame2: 'Back end Dev',
-  frame3: 2015,
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: thirdCardImage.src = './images/work-2.png',
-  technologies1: 'Html',
-  technologies2: 'Css',
-  technologies3: 'JavaScript',
-  liveLink: LiveLink,
-  sourceLink: SourceLink,
+  name: 'Budget App',
+  frame1: 'Lordkaito',
+  frame2: 'Full Stack Developer',
+  frame3: 2022,
+  description: 'Budget app to manage your expenses and incomes. It is developed using Ruby on Rails.',
+  featuredImage: thirdCardImage.src = './images/moneyes.jpeg',
+  technologies1: 'Ruby',
+  technologies2: 'Rails',
+  technologies3: '',
+  liveLink: 'https://sheltered-ridge-85815.herokuapp.com/',
+  sourceLink: 'https://github.com/Lordkaito/budget',
   frameImg: imgCounter1.src = './images/Counter.png',
 };
 
 const fourthProject = {
-  name: 'Multi-Post Stories',
-  frame1: 'CANOPY',
-  frame2: 'Back end Dev',
-  frame3: 2015,
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: fourthCardImage.src = './images/work-1.png',
-  technologies1: 'Html',
-  technologies2: 'Css',
-  technologies3: 'JavaScript',
-  liveLink: LiveLink,
-  sourceLink: SourceLink,
+  name: 'Booking app',
+  frame1: 'Lordkaito',
+  frame2: 'Full Stack Developer',
+  frame3: 2022,
+  description: 'An app to rent a car that uses Ruby on Rails for the API and React for the front end.',
+  featuredImage: fourthCardImage.src = './images/finalcap.jpg',
+  technologies1: 'React/Redux',
+  technologies2: 'Ruby',
+  technologies3: 'Rails',
+  liveLink: 'https://magicians-react-app.herokuapp.com/calculator',
+  sourceLink: 'https://github.com/Lordkaito/final-capstone-backend/tree/main',
   frameImg: imgCounter1.src = './images/Counter.png',
 };
 
@@ -268,7 +268,7 @@ function modalObj(value) {
         </ul>
       </div>
       <div class='modal-links'>
-        <a href='${value.githubLink}' target='_blank' class='action-btn'>Github</a>
+        <a href='${value.sourceLink}' target='_blank' class='action-btn'>Github</a>
         <a href='${value.liveLink}' target='_blank' class='action-btn'>Live</a>
       </div>
     </div>
